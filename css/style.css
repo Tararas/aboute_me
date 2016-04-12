@@ -199,15 +199,15 @@ p{
     #carousel-example-generic{
         margin-top: 100px;
     }
-    /*  #listbox-1{
-        background: url(../image/aquarius.png) top center no-repeat;
-    }*/
+      #listbox-1{
+        background: url(../image/aquarius_sm.png) top center no-repeat;
+    }
     #listbox-2{
         background: url(../image/mountins_sm.png) top center no-repeat;
     }
-    /*#listbox-3{
-        background: url(../image/mountins_sm.png) top center no-repeat;
-    }*/
+    #listbox-3{
+        background: url(../image/space_sm.png) top center no-repeat;
+    }
 
 }
 @media (max-width: 768px) {
@@ -252,13 +252,13 @@ p{
         width: 100%;
     }
     #listbox-1{
-        /*background: url(../image/aquarius.png) top center no-repeat;*/
+        background: url(../image/aquarius_md.png) top center no-repeat;
     }
     #listbox-2{
-        /*background: url(../image/mountins_sm.png) top center no-repeat;*/
+        background: url(../image/mountins_md.png) top center no-repeat;
     }
     #listbox-3{
-        /*background: url(../image/space_md.png) top center no-repeat;*/
+        background: url(../image/space_md.png) top center no-repeat;
     }
 }
 @media (max-width: 1200px) {
