@@ -1,11 +1,9 @@
 /*GENERAL STYLE*/
-body{
-    font-family: Museo Sans Cyrl;
-    font-size: 100%;
-    height: 100%;
-
-}
 html{
+    height: 100%;
+}
+body{
+    font: normal 100% Museo Sans Cyrl;
     height: 100%;
 }
 ul,li{
@@ -36,7 +34,8 @@ p{
 
 /*HEADER*/
 .container .title-intro-page{
-    margin-top: 200px;
+    padding: 250px 0 0 0;
+    position: relative;
 }
 .container .title-intro-page h1 {
     text-align: center;
@@ -69,8 +68,10 @@ p{
 .navbar-inverse .navbar-nav>li>a {
     font-size: 16px;
     color: #ffffff;
+    width: 100%;
 
 }
+
 .navbar-collapse{
     box-shadow: none;
 }
@@ -80,45 +81,82 @@ p{
 .navbar-inverse .navbar-toggle:focus, .navbar-inverse .navbar-toggle:hover{
     background: none;
 }
+
 .navbar-inverse .navbar-toggle{
     border: none;
 }
 .navbar-inverse .navbar-nav>li>a:hover{
     color: #ffff00;
+    background: black;
+    transition: all 1.0s ease;
 }
 .navbar-brand {
     padding: 10px 15px;
 }
 
-    /*NAVIGATION*/
+/*NAVIGATION*/
 
 /*HEADER*/
 /*ABOUT*/
-.main{
-    margin: 150px 0 0 0;
+.about{
+    padding: 150px 0 0 0;
+    position: relative;
 }
-.container .left_side{
-    width: 600px;
-    float: left;
-    font-size: 28px;
-    margin: 0 190px 0 0;
-    color: #ffffff;
-
-}
-.container .right_side h1 {
-    float: left;
-   /* margin: 0;*/
-    width: 300px;
-
-    font-size: 98px;
+.skils h1 {
+    font-size: 92px;
     font-weight: bolder;
     color: #ffffff;
     text-transform: uppercase;
 }
+.skils p{
+    font-size: 26px;
+    color: #ffffff;
+    opacity: 0.5;
+    margin: 20px 0 0 0;
+
+}
+.skils p:before {
+    content: "";
+    background: url(../image/dot.png) center center no-repeat;
+    display: inline-block;
+    width: 73px;
+    height: 17px;
+    margin: 0 10px 0 0 ;
+}
+
+.text-about p {
+    font-size: 26px;
+    margin-bottom: 5%;
+    color:#ffffff;
+
+}
 /*ABOUT*/
 
 /*PROJECR*/
+#carousel-example-generic{
+    position: relative;
+    margin-top: 60px;
+}
+.carousel-inner .item {
+    height: 500px;
+    width: 100%;
 
+}
+#listbox-1{
+    background: url(../image/aquarius_lg.png) top center no-repeat;
+}
+#listbox-2{
+    background: url(../image/mountins_lg.png) top center no-repeat;
+}
+#listbox-3{
+    background: url(../image/space_lg.png) top center no-repeat;
+}
+.carousel-caption h1{
+    font-size: 76px;
+}
+.carousel-caption p{
+    font-size: 26px;
+}
 /*PROJECR*/
 
 /*LOGIN FORM*/
@@ -130,3 +168,111 @@ p{
         float: right;
     }
 }
+
+@media (max-width: 480px) {
+    .about{  font-size: 100%;}
+    .skils h1 {
+        font-size: 26px;
+        text-align: center;
+    }
+    .skils p{
+        font-size: 16px;
+    }
+    .text-about p {
+        text-align: justify;
+        font-size: 16px
+    }
+    .carousel-inner .item {
+        width: 100%;
+        height:250px;
+    }
+    .carousel-caption{
+        font-size: 16px;
+    }
+    .carousel-caption h1 {
+        font-size: 16px;
+
+    }
+    .carousel-caption p{
+        font-size: 16px;
+    }
+    #carousel-example-generic{
+        margin-top: 100px;
+    }
+    /*  #listbox-1{
+        background: url(../image/aquarius.png) top center no-repeat;
+    }*/
+    #listbox-2{
+        background: url(../image/mountins_sm.png) top center no-repeat;
+    }
+    /*#listbox-3{
+        background: url(../image/mountins_sm.png) top center no-repeat;
+    }*/
+
+}
+@media (max-width: 768px) {
+    .container .title-intro-page h1 {
+        font-size: 60px;
+    }
+    .container .title-intro-page h2{
+        font-size: 20px;
+    }
+    .title-intro-page h2:before,
+    .title-intro-page h2:after{
+        content: "";
+        background: url("../image/decoration_line.png") center center no-repeat;
+        width: 40px;
+        height: 9px;
+        display: inline-block;
+
+        margin: 0 15px;
+    }
+    .carousel-caption{
+        font-size: 16px;
+    }
+    .carousel-caption h1{
+        font-size: 50px;
+    }
+    .about {
+        font-size: 100%;
+    }
+
+    .skils h1 {
+        font-size: 60px;
+        text-align: center;
+    }
+    .skils p{
+        font-size: 20px;
+        margin-bottom: 10px;
+    }
+    .text-about p {
+        font-size: 20px
+    }
+    .carousel-inner .item {
+        width: 100%;
+    }
+    #listbox-1{
+        /*background: url(../image/aquarius.png) top center no-repeat;*/
+    }
+    #listbox-2{
+        /*background: url(../image/mountins_sm.png) top center no-repeat;*/
+    }
+    #listbox-3{
+        /*background: url(../image/space_md.png) top center no-repeat;*/
+    }
+}
+@media (max-width: 1200px) {
+
+    .carousel-inner .item {
+        width: 100%;
+    }
+}
+@media (max-width: 1920px) {
+
+    .carousel-inner .item {
+        width: 100%;
+    }
+}
+
+
+
