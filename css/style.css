@@ -135,7 +135,7 @@ p{
 /*PROJECR*/
 #carousel-example-generic{
     position: relative;
-    margin-top: 160px;
+    margin-top: 100px;
 }
 .carousel-inner .item {
     height: 500px;
@@ -151,17 +151,111 @@ p{
 #listbox-3{
     background: url(../image/space_lg.png) top center no-repeat;
 }
+.carousel-caption{
+    background: #000000;
+    background: rgba(0,0,0,0.3);
+
+}
 .carousel-caption h1{
+    text-align: center;
     font-size: 76px;
 }
 .carousel-caption p{
+    text-align: center;
     font-size: 26px;
 }
 /*PROJECR*/
 
 /*LOGIN FORM*/
+.contacts{
+    margin-top: 10%;
+}
+.contactMe {
+    padding:0 15px 0 15px;
+}
+.contactMe h1 {
+    padding-bottom: 10%;
+    font-size: 92px;
+    font-weight: bold;
+    color: #ffffff;
+}
+.contactMe p {
+    padding-bottom: 5%;
+    position: relative;
+    font-size: 26px;
+    color: #ffffff;
+}
+form{
+    padding:0 15px 0 15px;
+}
+input{
+    width: 100%;
+    height: 60px;
+    margin-bottom: 5px;
+    padding-left: 10px;
+    border: none;
+    display: block;
+    background: #000000;
+    background: rgba(0,0,0,0.5);
+    font-size: 2em;
+    color: #ffffff;
+
+}
+textarea {
+    padding:10px 0 0 10px ;
+    width: 100%;
+    height: 150px;
+    display: block;
+    border: none;
+    margin-bottom: 10px;
+    background: #000000;
+    background: rgba(0,0,0,0.5);
+    font-size: 2em;
+    color: #ffffff;
+
+
+}
+.fix{
+    resize: none;
+}
+.contacts-bottom {
+    width: 50%;
+    height: 60px;
+
+    display: block;
+    border: 1px solid #ffff00;
+    background: #000000;
+    background: rgba(0,0,0,0.5);
+    color: #ffffff;
+    font-size: 2em;
+    text-transform: uppercase;
+}
+.contacts-bottom:hover {
+    background: #ffff00;
+    color: #000000;
+    transition: all 0.3s ease;
+}
 /*LOGIN FORM*/
 /*FOOTER*/
+footer {
+    margin-top: 100px;
+}
+footer a{
+    font-size: 26px;
+    color: #ffffff;
+
+}
+footer a:hover{
+    text-decoration: none;
+    color: yellow;
+}
+footer a:after{
+    content: "";
+    background: url(../image/line.png ) center no-repeat;
+    background-size: cover;
+    width: 50px;
+    height: 5px;
+}
 /*FOOTER*/
 @media (min-width: 768px){
     .navbar-collapse {
