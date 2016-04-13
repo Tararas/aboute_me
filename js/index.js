@@ -1,6 +1,3 @@
-/**
- * Created by haluniki on 11.04.16.
- */
 
 /*global $*/
 $(function () {
@@ -9,7 +6,7 @@ $(function () {
         var $anchor = $(this);
         $('html, body').stop().animate({
             scrollTop: ($($anchor.attr('href')).offset().top - 50)
-        }, 1250, 'easeInOutExpo');
+        }, 1000, 'easeInOutExpo');
         event.preventDefault();
     });
 })
